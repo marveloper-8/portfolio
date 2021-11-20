@@ -10,3 +10,5 @@ declare module '*.mov' {
     const src: string;
     export default src;
   }
+  
+  declare module 'react-router-dom';
