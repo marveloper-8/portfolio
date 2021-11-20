@@ -1,12 +1,8 @@
 import {useState, FunctionComponent} from 'react'
 // styling
 import * as GENERAL_STYLE from '../../styles/general'
-// resources
-import cv from '../../resources/cv.pdf'
 // utils
 import { PageModel } from '../../helpers/utils'
-// components
-import Tabs from '../../components/tabs'
 
 const Introduction: FunctionComponent<PageModel> = ({buttonAction}) => {
     const [buttonActive, setButtonActive] = useState(false);
