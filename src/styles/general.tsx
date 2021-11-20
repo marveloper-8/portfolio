@@ -185,11 +185,12 @@ export const Button = styled.button<ButtonModel>`
     border:none;
     height: 15px;
     padding: 2px 4px;
-    background: ${Color.Yellow};
+    background: ${props => props.back ? `rgba(255, 0, 0, .25)` : Color.Yellow};
     transition: .4s ease all;
     ${props =>  props.active && `
         height:auto;
         transition: .4s ease all;
+        background: ${props.back && `rgba(255, 0, 0, 1)`};
     `};
 `;
 
@@ -202,7 +203,7 @@ export const ButtonText = styled.div<ButtonModel>`
     font-weight: bolder;
     transition: .4s ease all;
     ${props =>  props.active ? `
-        color: ${Color.Black};
+        color: ${props.back ? Color.White : Color.Black};
         bottom: 0;
         transition: .4s ease all;
     ` : `

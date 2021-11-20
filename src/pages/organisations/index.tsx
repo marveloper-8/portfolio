@@ -8,9 +8,10 @@ import { PageModel } from '../../helpers/utils'
 // components
 import OrganisationsItem from '../../components/organisations-item'
 
-const Organisations: FunctionComponent<PageModel> = ({buttonAction}) => {
+const Organisations: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonActive2, setButtonActive2] = useState(false);
+    const [buttonActive3, setButtonActive3] = useState(false);
 
     const data = [
         {
@@ -101,6 +102,19 @@ const Organisations: FunctionComponent<PageModel> = ({buttonAction}) => {
                 })}
             </GENERAL_STYLE.Portfolio>
             <GENERAL_STYLE.ButtonContainer>
+                <span
+                    style={{
+                        cursor: 'pointer',
+                        marginRight: '20px'
+                    }}
+                    onMouseEnter={() => setButtonActive3(true)} 
+                    onMouseLeave={() => setButtonActive3(false)} 
+                    onClick={goBack}
+                >
+                    <GENERAL_STYLE.Button back={true} active={buttonActive3}>
+                        <GENERAL_STYLE.ButtonText back={true} active={buttonActive3}>GO BACK</GENERAL_STYLE.ButtonText>
+                    </GENERAL_STYLE.Button>
+                </span>
                 <span
                     style={{cursor: 'pointer'}}
                     onMouseEnter={() => setButtonActive(true)} 

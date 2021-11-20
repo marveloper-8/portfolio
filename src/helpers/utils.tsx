@@ -18,6 +18,7 @@ export interface InfoSectionModel{
 
 export interface ButtonModel{
     active?: any;
+    back?: any;
 }
 
 export interface PageModel{
@@ -25,6 +26,11 @@ export interface PageModel{
     active?: any;
     direction?: any;
     buttonAction?: any;
+    goBack?: any;
+    goExperience?: any;
+    goProjects?: any;
+    goCertificates?: any;
+    goOrganisations?: any
 }
 
 export interface AboutModel{

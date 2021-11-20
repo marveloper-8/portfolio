@@ -31,22 +31,44 @@ const App = () => {
                     <Introduction buttonAction={() => setPage("about")} />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="left" active={page === "about" ? true : false}>
-                    <About buttonAction={() => setPage("skills")} />
+                    <About 
+                        goBack={() => setPage("home")} 
+                        buttonAction={() => setPage("skills")} 
+                        goExperience={() => setPage("organisations")} 
+                        goProjects={() => setPage("projects")} 
+                        goCertificates={() => setPage("certificates")} 
+                        goOrganisations={() => setPage("organisations")} 
+                    />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="right" active={page === "skills" ? true : false}>
-                    <Skills buttonAction={() => setPage("organisations")} />
+                    <Skills 
+                        goBack={() => setPage("about")} 
+                        buttonAction={() => setPage("organisations")} 
+                    />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="left" active={page === "organisations" ? true : false}>
-                    <Organisations buttonAction={() => setPage("projects")} />
+                    <Organisations 
+                        goBack={() => setPage("skills")} 
+                        buttonAction={() => setPage("projects")} 
+                    />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="right" active={page === "projects" ? true : false}>
-                    <Projects buttonAction={() => setPage("certificates")} />
+                    <Projects 
+                        goBack={() => setPage("organisations")} 
+                        buttonAction={() => setPage("certificates")} 
+                    />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="left" active={page === "certificates" ? true : false}>
-                    <Certificates buttonAction={() => setPage("contact")} />
+                    <Certificates 
+                        goBack={() => setPage("projects")} 
+                        buttonAction={() => setPage("contact")} 
+                    />
                 </GENERAL_STYLE.Info>
                 <GENERAL_STYLE.Info direction="right" active={page === "contact" ? true : false}>
-                    <Contact buttonAction={() => setPage("home")} />
+                    <Contact 
+                        goBack={() => setPage("certificates")} 
+                        buttonAction={() => setPage("home")} 
+                    />
                 </GENERAL_STYLE.Info>
             </GENERAL_STYLE.Desktop>
             <GENERAL_STYLE.Mobile>

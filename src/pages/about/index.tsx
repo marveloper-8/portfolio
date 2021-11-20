@@ -8,26 +8,38 @@ import { PageModel } from '../../helpers/utils'
 // components
 import Tabs from '../../components/tabs'
 
-const About: FunctionComponent<PageModel> = ({buttonAction}) => {
+const About: FunctionComponent<PageModel> = ({
+    buttonAction,
+    goExperience,
+    goProjects,
+    goCertificates,
+    goOrganisations,
+    goBack
+}) => {
     const [buttonActive, setButtonActive] = useState(false);
     const [buttonActive2, setButtonActive2] = useState(false);
+    const [buttonActive3, setButtonActive3] = useState(false);
 
     const tab_data = [
         {
             title: "3+",
-            content: "Years of Experience"
+            content: "Years of Experience",
+            goTo: goExperience
         },
         {
             title: "30+",
-            content: "Projects Involvement"
+            content: "Projects Involvement",
+            goTo: goProjects
         },
         {
             title: "5+",
-            content: "Software Certifications"
+            content: "Software Certifications",
+            goTo: goCertificates
         },
         {
             title: "5+",
-            content: "Organizations Worked With"
+            content: "Organizations Worked With",
+            goTo: goOrganisations
         },
     ]
 
@@ -43,10 +55,30 @@ const About: FunctionComponent<PageModel> = ({buttonAction}) => {
             </GENERAL_STYLE.InfoSection>
             <GENERAL_STYLE.Stats>
                 {tab_data.map((item: any) => {
-                    return <Tabs title={item.title} content={item.content} />
+                    return (
+                        <span onClick={item.goTo} style={{cursor: 'pointer'}}>
+                            <Tabs 
+                                title={item.title} 
+                                content={item.content} 
+                            />
+                        </span>
+                    )
                 })}
             </GENERAL_STYLE.Stats>
             <GENERAL_STYLE.ButtonContainer>
+                <span
+                    style={{
+                        cursor: 'pointer',
+                        marginRight: '20px'
+                    }}
+                    onMouseEnter={() => setButtonActive3(true)} 
+                    onMouseLeave={() => setButtonActive3(false)} 
+                    onClick={goBack}
+                >
+                    <GENERAL_STYLE.Button back={true} active={buttonActive3}>
+                        <GENERAL_STYLE.ButtonText back={true} active={buttonActive3}>GO BACK</GENERAL_STYLE.ButtonText>
+                    </GENERAL_STYLE.Button>
+                </span>
                 <span
                     style={{cursor: 'pointer'}}
                     onMouseEnter={() => setButtonActive(true)} 
