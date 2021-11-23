@@ -5,11 +5,13 @@ import "./App.scss";
 // pages
 import Introduction from "./pages";
 import BadRequest from './pages/bad-request'
+import Lola from './pages/lola'
 
 const Routing = () => {
   return (
     <Switch>
       <Route exact path="/" component={Introduction} />
+      <Route exact path="/lola" component={Lola} />
       <BadRequest />
     </Switch>
   );
