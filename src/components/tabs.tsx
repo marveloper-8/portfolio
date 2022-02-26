@@ -1,8 +1,8 @@
 import {FunctionComponent} from 'react'
 // styling
-import * as GENERAL_STYLE from '../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // utils
-import { AboutModel } from '../helpers/utils'
+import { AboutModel } from 'helpers/utils'
 
 const Tabs: FunctionComponent<AboutModel> = ({title, content}) => {
 

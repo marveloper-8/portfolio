@@ -15,6 +15,18 @@ const Organisations: FunctionComponent<PageModel> = ({buttonAction, goBack}) => 
 
     const data = [
         {
+            org: "SynOption",
+            role: "React Developer (Singapore Remote)",
+            desc: "September 2021 till date",
+            stack: [
+                "Developed high end applications using React",
+                "Adopted Material UI, Styled Components, and SCSS for styling",
+                "Worked hand in hand with a large team of frontend developers",
+                "Developed the state management system using Redux",
+                "Connected some applications to their respective backend services using WebSocket",
+            ]
+        },
+        {
             org: "ProDevs",
             role: "React Developer (United States Remote)",
             desc: "September 2020 - August 2021",

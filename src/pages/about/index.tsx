@@ -1,12 +1,12 @@
 import {useState, FunctionComponent} from 'react'
 // styling
-import * as GENERAL_STYLE from '../../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // resources
-import cv from '../../resources/cv.pdf'
+import cv from 'resources/cv.pdf'
 // utils
-import { PageModel } from '../../helpers/utils'
+import { PageModel } from 'helpers/utils'
 // components
-import Tabs from '../../components/tabs'
+import Tabs from 'components/tabs'
 
 const About: FunctionComponent<PageModel> = ({
     buttonAction,
@@ -44,11 +44,11 @@ const About: FunctionComponent<PageModel> = ({
     ]
 
     return (
-        <div>
+        <GENERAL_STYLE.Container>
             <GENERAL_STYLE.InfoSection section="1">
                 <GENERAL_STYLE.InfoItem enhanced={true}>ABOUT ME!</GENERAL_STYLE.InfoItem>
             </GENERAL_STYLE.InfoSection>
-            <GENERAL_STYLE.InfoSection section="2" type="small">
+            <GENERAL_STYLE.InfoSection section="2" type="small" mobileNormal>
                 <p>
                     A Javascript Developer who has over 3 years extensive experience using Typescript, state management tools such as Redux, data visualization tools such as D3, styling frameworks such as SASS and Styled Components, technologies used for testing such as Jest and Enzyme, and mobile application development tools such as React Native
                 </p>
@@ -104,7 +104,7 @@ const About: FunctionComponent<PageModel> = ({
                     </GENERAL_STYLE.Button>
                 </span>
             </GENERAL_STYLE.ButtonContainer>
-        </div>
+        </GENERAL_STYLE.Container>
     )
 }
 

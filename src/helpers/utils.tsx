@@ -14,6 +14,7 @@ export interface InfoItemModel{
 export interface InfoSectionModel{
     section?: any;
     type?: any;
+    mobileNormal?: boolean;
 }
 
 export interface ButtonModel{
@@ -30,7 +31,8 @@ export interface PageModel{
     goExperience?: any;
     goProjects?: any;
     goCertificates?: any;
-    goOrganisations?: any
+    goOrganisations?: any;
+    mobile?: boolean;
 }
 
 export interface AboutModel{

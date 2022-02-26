@@ -32,6 +32,19 @@ const Skills: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             ]
         },
         {
+            title: "Backend Languages",
+            stack: [
+                "Python",
+                "Flask",
+                "Node JS",
+                "Postgre SQL",
+                "MySQL",
+                "Mongo DB",
+                "Graph QL",
+                "Web Socket",
+            ]
+        },
+        {
             title: "Backend Connections",
             stack: [
                 "Web Socket",
@@ -53,7 +66,8 @@ const Skills: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             title: "Data Visualisation",
             stack: [
                 "D3",
-                "Chart JS"
+                "Chart JS",
+                "Plotly.js"
             ]
         },
         {

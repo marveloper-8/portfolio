@@ -11,6 +11,8 @@ import Certificates from './certificates'
 import Contact from './contact'
 // videos
 import video from '../resources/memoji.mp4'
+// images
+import sad from '../resources/sad.jpg'
 
 const App = () => {
     const [page, setPage] = useState("home");
@@ -92,14 +94,27 @@ const App = () => {
                         </GENERAL_STYLE.VideoContainer>
                     </GENERAL_STYLE.VideoContainerOutter>
                 </GENERAL_STYLE.VideoContainerOutter2>
+                {layout.map((item: any) => {
+                    return (
+                        <GENERAL_STYLE.Info page={item.page} direction={item.direction} active={page === item.active}>
+                            {item.component}
+                        </GENERAL_STYLE.Info>
+                    )
+                })}
             </GENERAL_STYLE.Desktop>
-            {layout.map((item: any) => {
-                return (
-                    <GENERAL_STYLE.Info page={item.page} direction={item.direction} active={page === item.active}>
-                        {item.component}
-                    </GENERAL_STYLE.Info>
-                )
-            })}
+            <GENERAL_STYLE.Mobile>
+                <GENERAL_STYLE.VideoContainerOutter2 page={page}>
+                    <GENERAL_STYLE.VideoContainerOutter>
+                        <GENERAL_STYLE.VideoContainer>
+                            <GENERAL_STYLE.Image src={sad} />
+                        </GENERAL_STYLE.VideoContainer>
+                    </GENERAL_STYLE.VideoContainerOutter>
+                </GENERAL_STYLE.VideoContainerOutter2>
+                <GENERAL_STYLE.BadSection section="1">
+                    <GENERAL_STYLE.InfoItem enhanced={true}>OOPS!</GENERAL_STYLE.InfoItem> 
+                    <br />THIS ONLY WORKS WELL ON A LARGER SCREEN!
+                </GENERAL_STYLE.BadSection>
+            </GENERAL_STYLE.Mobile>
         </GENERAL_STYLE.Page>
     )
 }

@@ -15,11 +15,18 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
 
     const data = [
         {
+            org: "BioCatlog",
+            role: "React Developer",
+            desc: "Marketing",
+            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://biocatlog.com/"
+        },
+        {
             org: "ThatApp",
             role: "React Developer (while at ProDevs)",
             desc: "Data management & Enterprise App",
             tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, D3, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello, Asana",
-            link: " http://thatapp.io/"
+            link: "http://thatapp.io/"
         },
         {
             org: "ProDevs",

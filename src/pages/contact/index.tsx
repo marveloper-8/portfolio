@@ -40,7 +40,7 @@ const Contact: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     ]
 
     return (
-        <div>
+        <GENERAL_STYLE.Container>
             <GENERAL_STYLE.InfoSection section="1">
                 <GENERAL_STYLE.InfoItem enhanced={true}>CONNECT WITH ME!</GENERAL_STYLE.InfoItem>
             </GENERAL_STYLE.InfoSection>
@@ -58,7 +58,7 @@ const Contact: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
                 <GENERAL_STYLE.PortfolioTitle>
                     Contact Me
                 </GENERAL_STYLE.PortfolioTitle>
-                <GENERAL_STYLE.Contact>
+                <GENERAL_STYLE.Contact mobile>
                     {contact_data.map((item: any) => {
                         return <Tabs title={item.title} content={item.content} />
                     })}
@@ -103,7 +103,7 @@ const Contact: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
                     </GENERAL_STYLE.Button>
                 </span>
             </GENERAL_STYLE.ButtonContainer>
-        </div>
+        </GENERAL_STYLE.Container>
     )
 }
 

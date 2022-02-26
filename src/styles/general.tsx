@@ -59,6 +59,12 @@ export const Video = styled.video`
     position: absolute;
     top: 1.5vw;
     left: -2.75vw;
+    @media (max-width: 1030px){
+        top: 0;
+        width: 30vw;
+        height: 30vw;
+        left: -1.5vw;
+    };
 `;
 
 export const Image = styled.img`
@@ -94,6 +100,10 @@ export const VideoContainerOutter2 = styled.div<PageModel>`
         left: 0;
         top: 0;
         margin: auto;
+        width: 60vw;
+        height: 60vw;
+        ${props => props.page === "home" ? "display: flex" : "display: none"};
+        ${props => props.mobile && "margin-bottom: 30px"};
     };
 `;
 export const VideoContainerOutter = styled.div`
@@ -107,6 +117,10 @@ export const VideoContainerOutter = styled.div`
     align-items: center;
     justify-content: space-around;
     border: .5px solid rgba(255, 255, 255, .15);
+    @media (max-width: 1030px){
+        width: 45vw;
+        height: 45vw;
+    };
 `;
 
 export const VideoContainer = styled.div`
@@ -117,6 +131,10 @@ export const VideoContainer = styled.div`
     position: relative;
     overflow: hidden;
     border: .5px solid rgba(255, 255, 255, .15);
+    @media (max-width: 1030px){
+        width: 25vw;
+        height: 25vw;
+    };
 `;
 
 export const Info = styled.div<PageModel>`
@@ -141,11 +159,18 @@ export const Info = styled.div<PageModel>`
     ${props => props.active ? `
         // left: 0;
         transition: .4s ease all;
+        @media (max-width: 1030px){
+            width: 100vw;
+            left: 0;
+        };
     ` : `
         left: 100vw;
         transition: .4s ease all;
     `};
     @media (max-width: 1030px){
+        width: 100vw;
+        text-align: center;
+        justify-content: space-around;
     };
 `;
 
@@ -178,6 +203,14 @@ export const InfoSection = styled.div<InfoSectionModel>`
             right: 0;
         }
     };
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs35};
+        ${props => props.mobileNormal && `
+            font-family: ${FontFamily.Poppins};
+            font-size: ${FontSize.Fs11};
+            font-style: normal;
+        `};
+    };
 `;
 
 export const Button = styled.button<ButtonModel>`
@@ -192,6 +225,9 @@ export const Button = styled.button<ButtonModel>`
         transition: .4s ease all;
         background: ${props.back && `rgba(255, 0, 0, 1)`};
     `};
+    @media (max-width: 1030px){
+        height: 8px;
+    };
 `;
 
 export const ButtonText = styled.div<ButtonModel>`
@@ -209,19 +245,40 @@ export const ButtonText = styled.div<ButtonModel>`
     ` : `
         text-shadow: 1px 1px 4px #000000;
     `};
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs12};
+        bottom: 8px;
+    };
+`;
+
+export const Container = styled.div`
+    @media (max-width: 1030px){
+        width: calc(100vw - 30px);
+        padding: 10px 15px;
+    };
 `;
 
 export const Stats = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
+    @media (max-width: 1030px){
+        padding: 0 50px;
+        grid-template-columns: repeat(2, 1fr);
+    };
 `;
 
-export const Contact = styled.div`
+export const Contact = styled.div<PageModel>`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     grid-gap: 15px;
+    @media (max-width: 1030px){
+        display: grid;
+        padding: 0 50px;
+        ${props => props.mobile && `grid-template-columns: repeat(1, 1fr);`}
+        width: calc(100vw - 150px);
+    };
 `;
 
 export const StatsInfo = styled.div`
@@ -234,6 +291,10 @@ export const StatsInfo = styled.div`
     font-weight: bold;
     text-shadow: 1px 1px 4px #000000;
     transform: skew(-4deg);
+    @media (max-width: 1030px){
+        padding: 20px 10px;
+        font-size: ${FontSize.Fs11};
+    };
 `;
 
 export const StatsInfoTitle = styled.div`
@@ -241,6 +302,9 @@ export const StatsInfoTitle = styled.div`
     font-size: ${FontSize.Fs40};
     font-family: ${FontFamily.BebasNeue};
     font-weight: bolder;
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs25};
+    };
 `;
 
 export const ContactInfo = styled.div`
@@ -253,6 +317,10 @@ export const ContactInfo = styled.div`
     font-weight: bold;
     text-shadow: 1px 1px 4px #000000;
     transform: skew(-4deg);
+    @media (max-width: 1030px){
+        padding: 20px 10px;
+        font-size: ${FontSize.Fs11};
+    };
 `;
 
 export const ContactTitle = styled.div`
@@ -271,12 +339,20 @@ export const Portfolio = styled.div`
     max-height: 60vh;
     overflow-y: scroll;
     font-size: ${FontSize.Fs20};
+    @media (max-width: 1030px){
+        max-height: 70vh;
+    };
 `;
 
 export const PortfolioItem = styled.div`
     border-bottom: .5px solid rgba(255, 255, 255, .25);
     padding: 20px 0;
     position: relative;
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs11};
+        text-align: left;
+        padding: 20px;
+    };
 `;
 
 export const PortfolioItemBackground = styled.div<PageModel>`
@@ -299,6 +375,9 @@ export const PortfolioTitle = styled.div`
     font-size: ${FontSize.Fs40};
     font-family: ${FontFamily.BebasNeue};
     font-weight: bolder;
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs25};
+    };
 `;
 
 export const Break = styled.div`
@@ -335,6 +414,9 @@ export const Tab = styled.span`
     padding: 5px 15px;
     font-size: ${FontSize.Fs15};
     margin-bottom: 10px;
+    @media (max-width: 1030px){
+        font-size: ${FontSize.Fs11};
+    };
 `;
 
 export const Desktop = styled.div`
@@ -397,8 +479,12 @@ export const ContactLink = styled.div`
     cursor:pointer;
     color: ${Color.White};
     text-decoration: none;
+    word-wrap: break-word;
     &:hover{
         text-decoration: underline;
         color: ${Color.Yellow};
+    };
+    @media (max-width: 1030px){
+        // width: 40%;
     };
 `;

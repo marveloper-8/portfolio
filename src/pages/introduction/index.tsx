@@ -1,15 +1,25 @@
 import {useState, FunctionComponent} from 'react'
 // styling
-import * as GENERAL_STYLE from '../../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // utils
-import { PageModel } from '../../helpers/utils'
+import { PageModel } from 'helpers/utils'
+// videos
+import video from 'resources/memoji.mp4'
 
 const Introduction: FunctionComponent<PageModel> = ({buttonAction}) => {
     const [buttonActive, setButtonActive] = useState(false);
-
     return (
         <div>
             <GENERAL_STYLE.InfoSection section="1">
+                <GENERAL_STYLE.Mobile>
+                    <GENERAL_STYLE.VideoContainerOutter2 page="home" mobile>
+                        <GENERAL_STYLE.VideoContainerOutter>
+                            <GENERAL_STYLE.VideoContainer>
+                                <GENERAL_STYLE.Video src={video} autoPlay />
+                            </GENERAL_STYLE.VideoContainer>
+                        </GENERAL_STYLE.VideoContainerOutter>
+                    </GENERAL_STYLE.VideoContainerOutter2>
+                </GENERAL_STYLE.Mobile>
                 HI. I'M <GENERAL_STYLE.InfoItem enhanced={true}>JOSH!</GENERAL_STYLE.InfoItem>
             </GENERAL_STYLE.InfoSection>
             <GENERAL_STYLE.InfoSection section="2">
