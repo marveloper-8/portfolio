@@ -340,7 +340,7 @@ export const Portfolio = styled.div`
     overflow-y: scroll;
     font-size: ${FontSize.Fs20};
     @media (max-width: 1030px){
-        max-height: 70vh;
+        max-height: 60vh;
     };
 `;
 
