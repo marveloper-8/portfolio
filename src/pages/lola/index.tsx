@@ -1,7 +1,7 @@
 // styling
-import * as GENERAL_STYLE from '../../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // images
-import love from '../../resources/love.jpeg'
+import love from 'resources/love.jpeg'
 
 const App = () => {
 

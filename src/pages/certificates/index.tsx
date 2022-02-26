@@ -1,12 +1,12 @@
 import {useState, FunctionComponent} from 'react'
 // styling
-import * as GENERAL_STYLE from '../../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // resources
-import cv from '../../resources/cv.pdf'
+import cv from 'resources/cv.pdf'
 // utils
-import { PageModel } from '../../helpers/utils'
+import { PageModel } from 'helpers/utils'
 // components
-import Tab from '../../components/tabs3'
+import Tab from 'components/tabs3'
 
 const Certificates: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     const [buttonActive, setButtonActive] = useState(false);

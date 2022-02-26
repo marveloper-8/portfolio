@@ -54,16 +54,16 @@ export const BackgroundImage = styled.img`
     opacity: .3;
 `;
 
-export const Video = styled.video`
-    width: 20vw;
+export const Video = styled.img`
+    width: 15vw;
     position: absolute;
-    top: 1.5vw;
-    left: -2.75vw;
+    top: 0;
+    left: 0;
     @media (max-width: 1030px){
         top: 0;
-        width: 30vw;
-        height: 30vw;
-        left: -1.5vw;
+        width: 25vw;
+        height: 25vw;
+        left: 0;
     };
 `;
 

@@ -4,7 +4,7 @@ import * as GENERAL_STYLE from 'styles/general'
 // utils
 import { PageModel } from 'helpers/utils'
 // videos
-import video from 'resources/memoji.mp4'
+import video from 'resources/header.jpg'
 
 const Introduction: FunctionComponent<PageModel> = ({buttonAction}) => {
     const [buttonActive, setButtonActive] = useState(false);
@@ -15,7 +15,7 @@ const Introduction: FunctionComponent<PageModel> = ({buttonAction}) => {
                     <GENERAL_STYLE.VideoContainerOutter2 page="home" mobile>
                         <GENERAL_STYLE.VideoContainerOutter>
                             <GENERAL_STYLE.VideoContainer>
-                                <GENERAL_STYLE.Video src={video} autoPlay />
+                                <GENERAL_STYLE.Video src={video} />
                             </GENERAL_STYLE.VideoContainer>
                         </GENERAL_STYLE.VideoContainerOutter>
                     </GENERAL_STYLE.VideoContainerOutter2>

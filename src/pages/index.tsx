@@ -1,16 +1,16 @@
 import {useState} from 'react'
 // styling
-import * as GENERAL_STYLE from '../styles/general'
+import * as GENERAL_STYLE from 'styles/general'
 // pages
-import About from './about'
-import Introduction from './introduction'
-import Projects from './projects'
-import Skills from './skills'
-import Organisations from './organisations'
-import Certificates from './certificates'
-import Contact from './contact'
+import About from 'pages/about'
+import Introduction from 'pages/introduction'
+import Projects from 'pages/projects'
+import Skills from 'pages/skills'
+import Organisations from 'pages/organisations'
+import Certificates from 'pages/certificates'
+import Contact from 'pages/contact'
 // videos
-import video from '../resources/memoji.mp4'
+import video from 'resources/header.jpg'
 
 const App = () => {
     const [page, setPage] = useState("home");
@@ -81,14 +81,14 @@ const App = () => {
             />
         },
     ]
-
+    
     return (
         <GENERAL_STYLE.Page>
             <GENERAL_STYLE.Desktop>
                 <GENERAL_STYLE.VideoContainerOutter2 page={page}>
                     <GENERAL_STYLE.VideoContainerOutter>
                         <GENERAL_STYLE.VideoContainer>
-                            <GENERAL_STYLE.Video src={video} autoPlay />
+                            <GENERAL_STYLE.Video src={video} />
                         </GENERAL_STYLE.VideoContainer>
                     </GENERAL_STYLE.VideoContainerOutter>
                 </GENERAL_STYLE.VideoContainerOutter2>
