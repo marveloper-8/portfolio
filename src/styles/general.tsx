@@ -246,7 +246,7 @@ export const ButtonText = styled.div<ButtonModel>`
         text-shadow: 1px 1px 4px #000000;
     `};
     @media (max-width: 1030px){
-        font-size: ${FontSize.Fs12};
+        font-size: ${FontSize.Fs11};
         bottom: 8px;
     };
 `;
