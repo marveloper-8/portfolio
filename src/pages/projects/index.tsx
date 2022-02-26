@@ -157,7 +157,7 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
                 <span
                     style={{
                         cursor: 'pointer',
-                        marginRight: '20px'
+                        marginRight: '10px'
                     }}
                     onMouseEnter={() => setButtonActive3(true)} 
                     onMouseLeave={() => setButtonActive3(false)} 
@@ -181,7 +181,7 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
                 <span
                     style={{
                         cursor: 'pointer',
-                        marginLeft: '20px'
+                        marginLeft: '10px'
                     }}
                     onMouseEnter={() => setButtonActive2(true)} 
                     onMouseLeave={() => setButtonActive2(false)} 
