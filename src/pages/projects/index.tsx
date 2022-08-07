@@ -15,11 +15,11 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
 
     const data = [
         {
-            org: "BioCatlog",
+            org: "Test Your Typing",
             role: "React Developer",
-            desc: "Marketing",
-            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://biocatlog.com/"
+            desc: "Typing Test",
+            tech: "Next JS, React JS, SCSS, Styled Components, Typescript, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://test-your-typing-skill.vercel.app/"
         },
         {
             org: "ThatApp",
@@ -40,7 +40,21 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             role: "React Developer (while at ProDevs)",
             desc: "COVID-19 Medical App",
             tech: "Styled Components, Typescript, React, GraphQL, Test Driven Development, Jest, Enzyme, React Testing Library, Asana",
-            link: "http://covid19.medfit.ng/"
+            link: "https://covid19.medfit.com.ng/"
+        },
+        {
+            org: "Dashboard Design",
+            role: "React Developer",
+            desc: "Dashboard",
+            tech: "React JS, SCSS, Styled Components, ReCharts, D3, Typescript, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://test-your-typing-skill.vercel.app/"
+        },
+        {
+            org: "BioCatlog",
+            role: "React Developer",
+            desc: "Marketing",
+            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://biocatlog.com/"
         },
         {
             org: "Water Alliance",
