@@ -47,7 +47,7 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             role: "React Developer",
             desc: "Dashboard",
             tech: "React JS, SCSS, Styled Components, ReCharts, D3, Typescript, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://test-your-typing-skill.vercel.app/"
+            link: "https://gentle-valkyrie-7a76c2.netlify.app/"
         },
         {
             org: "BioCatlog",
