@@ -1,3 +1,29 @@
-.App {
+
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 1rem;
+  };
   
-}
+  *::-webkit-scrollbar-track {
+    width: 5px;
+    height: 5px;
+    border-radius: 1rem;
+    background: none;
+  };
+  
+  *::-webkit-scrollbar-thumb {
+    background: #dadada;
+    width: 5px;
+    height:  5px;
+    border-radius: 1rem;
+  };
+  
+  *::-webkit-scrollbar-corner {
+      background: #dadada;
+  };
+  
+  *{
+    scroll-behavior: smooth;
+  };
