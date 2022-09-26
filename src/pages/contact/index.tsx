@@ -13,17 +13,10 @@ const Contact: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     const [buttonActive2, setButtonActive2] = useState(false);
     const [buttonActive3, setButtonActive3] = useState(false);
 
-    const work_data = [
-        "B2B Contract",
-        "B2C Contract",
-        "In-House",
-        "Freelance",
-    ];
-
     const contact_data = [
         {
-            title: "Phone",
-            content: "+238074681328",
+            title: "Biocatlog",
+            content: "https://www.catlog.bio/josh",
         },
         {
             title: "Email",
@@ -46,15 +39,6 @@ const Contact: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             </GENERAL_STYLE.InfoSection>
             <div style={{marginTop: '25px'}} />
             <GENERAL_STYLE.Portfolio>
-                <GENERAL_STYLE.PortfolioTitle>
-                    Modes of Work
-                </GENERAL_STYLE.PortfolioTitle>
-                <GENERAL_STYLE.Contact>
-                    {work_data.map((item: any) => {
-                        return <Tabs title={item} />
-                    })}
-                </GENERAL_STYLE.Contact>
-                <br /><br />
                 <GENERAL_STYLE.PortfolioTitle>
                     Contact Me
                 </GENERAL_STYLE.PortfolioTitle>

@@ -15,67 +15,32 @@ const Skills: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
 
     const data = [
         {
-            title: "Software Development Stack",
+            title: "Frontend",
             stack: [
                 "Javascript",
                 "Typescript",
                 "React JS",
                 "Next JS",
                 "Redux",
-                "Three JS",
                 "React Native",
-                "Node JS",
-                "Express JS",
-                "Git Version Control",
-                "SasS",
-                "RxJS"
-            ]
-        },
-        {
-            title: "Backend Languages",
-            stack: [
-                "Python",
-                "Flask",
-                "Node JS",
-                "Postgre SQL",
-                "MySQL",
-                "Mongo DB",
-                "Graph QL",
-                "Web Socket",
-            ]
-        },
-        {
-            title: "Backend Connections",
-            stack: [
-                "Web Socket",
-                "Rest API",
-                "GraphQL"
-            ]
-        },
-        {
-            title: "Styling",
-            stack: [
                 "Styled Components",
                 "SCSS",
                 "Material UI",
                 "Tailwind CSS",
-                "Bootstrap"
-            ]
-        },
-        {
-            title: "Data Visualisation",
-            stack: [
+                "Bootstrap",
                 "D3",
+                "RxJS",
                 "Chart JS",
-                "Plotly.js"
+                "Plotly JS"
             ]
         },
         {
-            title: "Unit Testing",
+            title: "Backend",
             stack: [
-                "Jest",
-                "Enzyme",
-                "React Testing Library"
+                "Node JS", 
+                "Mongo DB", 
+                "MySQL", 
+                "GraphQL"
             ]
         },
         {
@@ -83,15 +48,21 @@ const Skills: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             stack: [
                 "Trello",
                 "Jira",
-                "Asana"
-            ]
-        },
-        {
-            title: "Methodologies",
-            stack: [
+                "Asana",
                 "Agile",
                 "Scrum",
                 "Test Driven Development"
+            ]
+        },
+        {
+            title: "Others",
+            stack: [
+                "Github",
+                "Gitlab",
+                "Heroku",
+                "AWS",
+                "Vercel",
+                "Willing to learn new technology"
             ]
         },
         {
@@ -111,7 +82,7 @@ const Skills: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     return (
         <div>
             <GENERAL_STYLE.InfoSection section="1">
-                <GENERAL_STYLE.InfoItem enhanced={true}>SKILLS ACQUIRED!</GENERAL_STYLE.InfoItem>
+                <GENERAL_STYLE.InfoItem enhanced={true}>TECHNOLOGIES I USE!</GENERAL_STYLE.InfoItem>
             </GENERAL_STYLE.InfoSection>
             <GENERAL_STYLE.Portfolio>
                 {data.map((item: any) => {

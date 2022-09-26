@@ -15,6 +15,34 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
 
     const data = [
         {
+            org: "BioCatlog Portfolio",
+            role: "React Developer",
+            desc: "Portfolio Website",
+            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://biocatlog.com"
+        },
+        {
+            org: "BioCatlog Profile",
+            role: "React Developer",
+            desc: "Link in Bio Technology",
+            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://catlog.bio/biocatlog"
+        },
+        {
+            org: "BioCatlog Storefront",
+            role: "React Developer",
+            desc: "Biocatlog Storefront",
+            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://catlog.bio/s/demo"
+        },
+        {
+            org: "BioCatlog Admin App",
+            role: "React Developer",
+            desc: "Administrator's Application",
+            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://app.biocatlog.com"
+        },
+        {
             org: "Test Your Typing",
             role: "React Developer",
             desc: "Typing Test",
@@ -43,39 +71,25 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             link: "https://covid19.medfit.com.ng/"
         },
         {
-            org: "Dashboard Design",
-            role: "React Developer",
-            desc: "Dashboard",
-            tech: "React JS, SCSS, Styled Components, ReCharts, D3, Typescript, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://gentle-valkyrie-7a76c2.netlify.app/"
-        },
-        {
-            org: "BioCatlog",
-            role: "React Developer",
-            desc: "Marketing",
-            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://biocatlog.com/"
-        },
-        {
-            org: "Water Alliance",
-            role: "React Developer (while at ProDevs)",
-            desc: "Marketplace App for Water Vendors",
-            tech: "Chart.js, Material UI, SCSS, Typescript, React, REST API, Test Driven Development, Redux, Jest, Enzyme, React Testing Library, Trello, Asana",
-            link: "http://wateralliance.ng/"
-        },
-        {
-            org: "U-Greet",
-            role: "React Developer",
-            desc: "Social Media App used for editing and sharing videos with collaborators",
-            tech: "Styled Components, Material UI, SCSS, Tailwind CSS, Typescript, React, REST API, Test Driven Development, Redux, Jest, Enzyme, React Testing Library, Trello",
-            link: "http://ugreet.xyz/"
-        },
-        {
             org: "Momize",
             role: "React Developer",
             desc: "Fintech App",
             tech: "Styled Components, Material UI, SCSS, Tailwind CSS, Typescript, React, REST API, Test Driven Development, Redux, Jest, Enzyme, React Testing Library, Trello",
             link: "http://momize-spa.vercel.app/"
+        },
+        {
+            org: "Github Clone",
+            role: "Javascript & UI Developer",
+            desc: "Github Mini Clone",
+            tech: "Javascript, CSS",
+            link: "http://marveloper-8.github.io/github-clone/"
+        },
+        {
+            org: "Dashboard Design",
+            role: "React Developer",
+            desc: "Dashboard",
+            tech: "React JS, SCSS, Styled Components, ReCharts, D3, Typescript, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+            link: "https://gentle-valkyrie-7a76c2.netlify.app/"
         },
         {
             org: "RPSLS",
@@ -99,25 +113,11 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             link: "https://marveloper-8.github.io/google-homepage-replica/"
         },
         {
-            org: "Three.js Ball",
-            role: "Javascript Developer",
-            desc: "3D rendering of a ball made on a webpage with cursor control",
-            tech: "SCSS, Three.js, Javascript",
-            link: "https://three-three.vercel.app/"
-        },
-        {
             org: "Hacker News Blog",
             role: "React Developer",
             desc: "Hacker News App",
             tech: "SCSS, Typescript, React, Test Driven Development, Jest, Enzyme, React Testing Library, GraphQL",
             link: "http://hacker-news-one.vercel.app/"
-        },
-        {
-            org: "Github Clone",
-            role: "Javascript & UI Developer",
-            desc: "Github Mini Clone",
-            tech: "Javascript, CSS",
-            link: "http://marveloper-8.github.io/github-clone/"
         },
         {
             org: "Instagram Clone",
