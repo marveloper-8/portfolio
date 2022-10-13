@@ -5,7 +5,7 @@ import "./App.scss";
 // pages
 import Introduction from "./pages";
 import BadRequest from './pages/bad-request'
-import Lola from './pages/lola'
+import Lola from './pages/jasmine'
 
 const Routing = () => {
   return (
