@@ -26,14 +26,14 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
             role: "React Developer",
             desc: "Link in Bio Technology",
             tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://catlog.bio/biocatlog"
+            link: "https://catlog-bio.vercel.app/biocatlog"
         },
         {
             org: "BioCatlog Storefront",
             role: "React Developer",
             desc: "Biocatlog Storefront",
             tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://catlog.bio/s/demo"
+            link: "https://catlog-bio.vercel.app/s/demo"
         },
         {
             org: "BioCatlog Admin App",
