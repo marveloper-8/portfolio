@@ -19,7 +19,7 @@ const App = () => {
                     <GENERAL_STYLE.Info direction="right" active={true}>
                         <GENERAL_STYLE.InfoSection section="1">
                             <GENERAL_STYLE.InfoItem enhanced={true}>I Love You</GENERAL_STYLE.InfoItem> 
-                            <br /> Lola! ❤️‍🔥
+                            <br /> Belen! ❤️‍🔥🌻
                         </GENERAL_STYLE.InfoSection>
                     </GENERAL_STYLE.Info>
                 </div>
