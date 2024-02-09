@@ -332,6 +332,7 @@ export const ContactTitle = styled.div`
 
 export const ButtonContainer = styled.div`
     margin-top: 25px;
+    padding-bottom:25px;
 `;
 
 export const Portfolio = styled.div`
