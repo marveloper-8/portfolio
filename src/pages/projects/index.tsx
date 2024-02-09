@@ -14,33 +14,40 @@ const Projects: FunctionComponent<PageModel> = ({buttonAction, goBack}) => {
     const [buttonActive3, setButtonActive3] = useState(false);
 
     const data = [
+        // {
+        //     org: "BioCatlog Portfolio",
+        //     role: "React Developer",
+        //     desc: "Portfolio Website",
+        //     tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+        //     link: "https://biocatlog.com"
+        // },
+        // {
+        //     org: "BioCatlog Profile",
+        //     role: "React Developer",
+        //     desc: "Link in Bio Technology",
+        //     tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+        //     link: "https://catlog-bio.vercel.app/biocatlog"
+        // },
+        // {
+        //     org: "BioCatlog Storefront",
+        //     role: "React Developer",
+        //     desc: "Biocatlog Storefront",
+        //     tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+        //     link: "https://catlog-bio.vercel.app/s/demo"
+        // },
+        // {
+        //     org: "BioCatlog Admin App",
+        //     role: "React Developer",
+        //     desc: "Administrator's Application",
+        //     tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
+        //     link: "https://app.biocatlog.com"
+        // },
         {
-            org: "BioCatlog Portfolio",
+            org: "Mira Hairline",
             role: "React Developer",
-            desc: "Portfolio Website",
-            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://biocatlog.com"
-        },
-        {
-            org: "BioCatlog Profile",
-            role: "React Developer",
-            desc: "Link in Bio Technology",
-            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://catlog-bio.vercel.app/biocatlog"
-        },
-        {
-            org: "BioCatlog Storefront",
-            role: "React Developer",
-            desc: "Biocatlog Storefront",
-            tech: "Next JS, Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://catlog-bio.vercel.app/s/demo"
-        },
-        {
-            org: "BioCatlog Admin App",
-            role: "React Developer",
-            desc: "Administrator's Application",
-            tech: "Redux, Material UI, SCSS, Styled Components, Typescript, React, REST API, Test Driven Development, Jest, Enzyme, React Testing Library, Trello",
-            link: "https://app.biocatlog.com"
+            desc: "Online store for hair shoppig",
+            tech: "Next JS, React JS, SCSS, Styled Components, Typescript, React Context, Jest, React Testing Libraryo",
+            link: "https://www.mirahairline.com/"
         },
         {
             org: "Test Your Typing",
