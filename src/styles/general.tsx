@@ -11,7 +11,7 @@ import  {
 
 export const Page = styled.section`
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     position: fixed;
     top: 0;
     left: 0;
